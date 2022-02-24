@@ -1,0 +1,26 @@
+POST  http://localhost:3030/accounts HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "hashem.kamali@gmail.com",
+    "password": "223344"
+}
+
+### Signin
+POST http://localhost:3030/authentication HTTP/1.1
+Content-Type: application/json
+
+{
+    "email": "hashem.kamali@gmail.com",
+    "password": "223344"
+}
+
+### Edit user information
+PUT http://localhost:3030/accounts HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZGVudGl0eV9pZCI6IjYyMTY3NjE0ZTVlOTZjNjhkMjEwNzg4ZCIsImlhdCI6MTY0NTY2NDg1OCwiZXhwIjoxNjQ1NjY1MTU4fQ.ZK-QJZvzjjUdNqHggq8fn1sIn8RK6EtlV45lNXyJpUo
+
+{
+    "email": "sadegh.qolami@gmail.com",
+    "password": "111111"
+}
